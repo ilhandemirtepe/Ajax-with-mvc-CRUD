@@ -1,0 +1,72 @@
+﻿@model IEnumerable<WebApplication7.Models.Calisanlar>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/jquery-3.2.1.js"></script>
+<script src="~/Scripts/jquery-3.2.1.min.js"></script>
+
+<script src="~/Scripts/Myjs/Listele.js"></script>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<div class="row">
+    <div class="col-md-2">Adı</div>
+    <div class="col-md-2">Email</div>
+    <div class="col-md-2">Tecrube</div>
+    <div class="col-md-2">Telefon</div>
+    <div class="col-md-4">İşlemler</div>
+</div>
+<div id="mydiv">
+
+</div>
+
+Adi: @Html.TextBox("Aditxt")  <br />
+Email :@Html.TextBox("Emailtxt")<br />
+Tecrube: @Html.TextBox("TecrubeTxt") <br />
+Telefon: @Html.TextBox("Telefontxt") <br />
+<input type="button" value="Kaydet" onclick="Add()" />
+
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tecrube)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tecrube)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>*@
+
